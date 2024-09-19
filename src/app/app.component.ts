@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'basesAngular';
+  title = 'baseAngular';
+
+  pelicula={
+    nombre: 'Super man',
+    fechaLanzamiento: new Date(),
+    precio: 123.65
+  }
+
+  duplicarNumero(valor:number):number{
+    return valor*2;
+  }
 }
