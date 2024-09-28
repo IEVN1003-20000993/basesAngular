@@ -1,0 +1,69 @@
+<div class="container">
+    <h1>Resistencias</h1>
+    <form [formGroup]="formulario" (ngSubmit)="calcular()">
+      <div class="form-group">
+        <label for="color1">1era Banda:</label>
+        <select id="color1" formControlName="color1">
+          <option value="" disabled></option>
+          <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+        </select>
+  
+        <label for="color2">2da Banda:</label>
+        <select id="color2" formControlName="color2">
+          <option value="" disabled></option>
+          <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+        </select>
+  
+        <label for="color3">3era Banda:</label>
+        <select id="color3" formControlName="color3">
+          <option value="" disabled></option>
+          <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+        </select>
+  
+        <label for="tolerancia">Tolerancia:</label>
+        <select id="tolerancia" formControlName="tolerancia">
+          <option value="" disabled></option>
+          <option *ngFor="let tolerancia of tolerancias" [value]="tolerancia">{{ tolerancia }}</option>
+        </select>
+  
+        <button type="submit" [disabled]="formulario.invalid">Validar</button>
+      </div>
+    </form>
+  
+    <div class="results-container" *ngIf="resultado">
+      <div class="info">
+        <h2>Resultados</h2>
+        <p><strong>Banda #1:</strong> {{ colorSeleccionado1 }}</p>
+        <p><strong>Banda #2:</strong> {{ colorSeleccionado2 }}</p>
+        <p><strong>Banda #3:</strong> {{ colorSeleccionado3 }}</p>
+        <p><strong>Tolerancia:</strong> {{ toleranciaSeleccionada }}</p>
+        <p><strong>Valor:</strong> {{ valor }} Ω</p>
+        <p><strong>Valor Máximo:</strong> {{ valorMaximo }} Ω</p>
+        <p><strong>Valor Mínimo:</strong> {{ valorMinimo }} Ω</p>
+      </div>
+      
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>B #1</th>
+            <th>B #2</th>
+            <th>B #3</th>
+            <th>Tolerancia</th>
+            <th>Valor Ω</th>
+            <th>Valor máx Ω</th>
+            <th>Valor mín Ω</th>
+          </tr>
+          <tr>
+            <td [style.background]="getColorCode(colorSeleccionado1)">{{ colorSeleccionado1 }}</td>
+            <td [style.background]="getColorCode(colorSeleccionado2)">{{ colorSeleccionado2 }}</td>
+            <td [style.background]="getColorCode(colorSeleccionado3)">{{ colorSeleccionado3 }}</td>
+            <td [style.background]="getToleranceColor()">{{ toleranciaSeleccionada }}</td>
+            <td>{{ valor }}</td>
+            <td>{{ valorMaximo }}</td>
+            <td>{{ valorMinimo }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  

@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class OperasBasComponent {
 
-  num1=''
-  num2=''
-  resultado:number=0;
 
-  sumar(){
-    this.resultado=parseInt(this.num1)+parseInt(this.num2)
-  }
-
+ num1=''
+ num2=''
+ resultado:number=0;
+ 
+ sumar(){
+  this.resultado=parseInt(this.num1)+parseInt(this.num2)
+}
 }

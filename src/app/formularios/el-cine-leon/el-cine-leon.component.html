@@ -1,0 +1,45 @@
+<div class="container mt-5">
+  <h1>Cines León</h1>
+
+  <form (ngSubmit)="procesar()">
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="nombre" name="nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="compradores">Cantidad de clientes:</label>
+      <input type="number" id="compradores" class="form-control" [(ngModel)]="cantidadCompradores" name="cantidadCompradores" required min="1">
+    </div>
+
+    <div class="form-group">
+      <label for="boletos">Cantidad de Boletos:</label>
+      <input type="number" id="boletos" class="form-control" [(ngModel)]="cantidadBoletos" name="cantidadBoletos" required min="1">
+      <small class="form-text text-muted">Solo se permiten 7 boletos por cliente.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="tarjetaCineco">Tarjeta Cineco:</label>
+      <div>
+        <input type="radio" id="tarjetaSi" [(ngModel)]="tarjetaCineco" name="tarjetaCineco" value="Si">
+        <label for="tarjetaSi">Sí</label>
+        
+        <input type="radio" id="tarjetaNo" [(ngModel)]="tarjetaCineco" name="tarjetaCineco" value="No" checked>
+        <label for="tarjetaNo">No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="totalPagar">Valor a Pagar:</label>
+      <input type="text" id="totalPagar" class="form-control" [value]="valorPagar" readonly>
+    </div>
+
+    <div *ngIf="mensajeDescuento" class="alert alert-info">
+      {{ mensajeDescuento }}
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-outline-success">Procesar</button>
+    </div>
+  </form>
+</div>

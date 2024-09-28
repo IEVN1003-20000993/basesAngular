@@ -21,34 +21,34 @@ export class ProductListComponent {
 
     {
       "ProductoId":1,
-      "Modelo": 'Sentra',
-      "Descripcion": "4 Puertas Familiar",
+      "Modelo": 'DIABLO',
+      "Descripcion": "2 Puertas (NO SUBAS GORDAS)",
       "Year":"febrero 3 2022",
-      "Precio": 20000,
-      "Marca":"NISSAN",
-      "Color":"Morado",
-      "imagenUrl":"https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_4b4578b2047947618873ae0665be3a54.webp"
+      "Precio": 20000000,
+      "Marca":"LAMBORGHINI",
+      "Color":"AZUL",
+      "imagenUrl":"https://i.ebayimg.com/images/g/nbMAAOSwNwJjaGE4/s-l1200.webp"
     },
     {
       "ProductoId":2,
-      "Modelo": 'Z360',
-      "Descripcion": "2 Puertas",
+      "Modelo": 'r8',
+      "Descripcion": "2 Puertas Y SI TE LOS PREGUNTAS SI CABEN 7U7",
       "Year":"marzo 3 2023",
-      "Precio": 800000,
-      "Marca":"NISSAN",
-      "Color":"Rojo",
-      "imagenUrl":"https://wallup.net/wp-content/uploads/2019/09/61976-cars-nissan-370z.jpg"
+      "Precio": 30000,
+      "Marca":"AUDI",
+      "Color":"Blanco",
+      "imagenUrl":"https://cdn.motor1.com/images/mgl/W89egj/s3/2023-audi-r8-v10-gt-rwd-exterior.jpg"
       
     },
     {
       "ProductoId":3,
-      "Modelo": 'Rio',
-      "Descripcion": "4 Puertas Familiar",
+      "Modelo": 'CHIRON',
+      "Descripcion": "2 PUERTAS PARA VERTE MAMALON AJAJAJAJAJA",
       "Year":"Agosto 3 2022",
-      "Precio": 60000,
-      "Marca":"KIA",
-      "Color":"Azul",
-      "imagenUrl":"https://www.autoasesor.com/kia/imagenes/riohb2023.png"
+      "Precio": 600000,
+      "Marca":"BUGATTI",
+      "Color":"BLANCO",
+      "imagenUrl":"https://soymotor.com/sites/default/files/2023-07/bugatti-chiron-pur-sport-grand-prix-soymotor.jpg"
       
     }
   ]

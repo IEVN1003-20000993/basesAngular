@@ -1,0 +1,35 @@
+<div> 
+    <h1>Multiplica 2 números</h1> <!-- Título del formulario -->
+    <br>
+  
+    <!-- El formulario está vinculado al FormGroup llamado 'formulario' que está definido en el TypeScript -->
+    <form [formGroup]="formulario"> 
+  
+      <!-- Primer número -->
+      <div> 
+        <label for="inputLarge" class="col-form-label col-form-label-lg mt-4">Primer número</label> 
+        <br>
+  
+        <!-- Input para el primer número, vinculado al control 'numero1' definido en el FormGroup -->
+        <input formControlName="numero1" type="number" class="form-control form-control-lg"> 
+      </div>
+  
+      <!-- Segundo número -->
+      <div> 
+        <label for="inputLarge" class="col-form-label col-form-label-lg mt-4">Segundo número</label> 
+        <br>
+  
+        <!-- Input para el segundo número, vinculado al control 'numero2' definido en el FormGroup -->
+        <input formControlName="numero2" type="number" class="form-control form-control-lg"> 
+      </div>
+  
+      <br>
+  
+      <!-- Botón para ejecutar la función multNumeros() cuando se haga clic -->
+      <button (click)="multNumeros()" type="button" class="btn btn-outline-light">Multiplicar</button> 
+  
+      <!-- Muestra el resultado de la multiplicación -->
+      <p>Resultado: {{resultado}}</p> 
+    </form>
+  </div>
+  

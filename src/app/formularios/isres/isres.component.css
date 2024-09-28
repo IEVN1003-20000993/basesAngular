@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .results-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .info {
+    width: 45%; /* Ajusta el ancho según sea necesario */
+  }
+  
+  .table-container {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
